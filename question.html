@@ -1,0 +1,14 @@
+<p>Определите эмоцию говорящего</p>
+<form action='http://127.0.0.1:5000/thank'>
+<ul>
+{% for number,sentence in list_of_sentences.items() %}
+{{ sentence}}
+    <ul>
+    <label> <input type="checkbox" name="happiness">Радость</label><br>
+	<label> <input type="checkbox" name="sadness">Грусть</label><br>
+	<label> <input type="checkbox" name="anger">Гнев</label><br>
+	<label> <input type="checkbox" name="reproach">Упрек</label><br>
+	<label> <input type="checkbox" name="sarcasm">Сарказм</label><br>
+	</ul>
+{% endfor %}
+</ul>
